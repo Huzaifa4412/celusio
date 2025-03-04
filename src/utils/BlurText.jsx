@@ -2,6 +2,19 @@
 import { useRef, useEffect, useState } from "react";
 import { useSprings, animated } from "@react-spring/web";
 
+// interface BluxTextType {
+//   text: string;
+//   delay: number;
+//   className: string;
+//   threshold: number;
+//   animateBy: string;
+//   direction: string;
+//   rootMargin?: string;
+//   animationFrom?: any;
+//   animationTo?: any;
+//   easing?: string;
+//   onAnimationComplete?: any;
+// }
 const BlurText = ({
   text = "",
   delay = 200,

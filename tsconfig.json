@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/utils/BlurText.jsx"
+    "src/utils/BlurText.tsx",
+    "src/components/Header.jsx"
   ],
   "exclude": ["node_modules"]
 }
