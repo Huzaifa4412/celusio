@@ -14,9 +14,6 @@ const Header = () => {
         animateBy="words"
         direction="top"
         threshold={0.3}
-        animationFrom="0"
-        animationTo="1"
-        onAnimationComplete={() => {}}
         className="text-xl"
       />
     </nav>
