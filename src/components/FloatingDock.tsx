@@ -27,7 +27,7 @@ export function FloatingDockDemo() {
       href: "#",
     },
     {
-      title: "Components",
+      title: "Services",
       icon: (
         <IconBrandMyOppo className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),

@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="container flex items-center justify-between !py-0">
+    <nav className="container flex items-center justify-between gap-8 !py-0">
       <div id="logo">
         <Image src={"/logo.svg"} alt="Logo" width={150} height={100}></Image>
       </div>
@@ -14,7 +14,7 @@ const Header = () => {
         animateBy="words"
         direction="top"
         threshold={0.3}
-        className="text-xl"
+        className="sm:text-xl text-sm capitalize font-medium "
       />
     </nav>
   );
