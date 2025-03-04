@@ -12,6 +12,7 @@
     "@react-spring/web": "^9.7.5",
     "@tabler/icons-react": "^3.30.0",
     "clsx": "^2.1.1",
+    "lucide-react": "^0.477.0",
     "motion": "^12.4.10",
     "next": "15.2.1",
     "postcss": "^8.5.3",
