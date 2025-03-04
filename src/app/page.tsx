@@ -1,11 +1,13 @@
 import { FloatingDockDemo } from "@/components/FloatingDock";
+import Header from "@/components/Header";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <>
+      <Header />
       <FloatingDockDemo />
-    </div>
+    </>
   );
 };
 
