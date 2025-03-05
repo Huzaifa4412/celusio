@@ -21,7 +21,7 @@ const socialIcons: SocialIcon[] = [
   {
     name: "Facebook",
     icon: Facebook,
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/people/Celusio/61573787310725/",
     color: "text-blue-500",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-blue-500",
@@ -37,7 +37,7 @@ const socialIcons: SocialIcon[] = [
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/celusio.pk/",
     color: "text-pink-500",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-pink-500",
@@ -45,7 +45,7 @@ const socialIcons: SocialIcon[] = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/celusio-solutions-aa69a5353/",
     color: "text-blue-600",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-blue-600",
@@ -54,7 +54,7 @@ const socialIcons: SocialIcon[] = [
   {
     name: "Email",
     icon: Mail,
-    href: "mailto:contact@youragency.com",
+    href: "mailto:huzaifamukhtar436@gmail.com",
     color: "text-emerald-500",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-emerald-500",
