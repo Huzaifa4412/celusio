@@ -3,15 +3,7 @@
 import type React from "react";
 
 import { motion } from "framer-motion";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
@@ -58,22 +50,7 @@ const socialIcons: SocialIcon[] = [
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-blue-600",
   },
-  {
-    name: "YouTube",
-    icon: Youtube,
-    href: "https://youtube.com",
-    color: "text-red-500",
-    hoverColor: "group-hover:text-white",
-    bgColor: "group-hover:bg-red-500",
-  },
-  {
-    name: "GitHub",
-    icon: Github,
-    href: "https://github.com",
-    color: "text-gray-800",
-    hoverColor: "group-hover:text-white",
-    bgColor: "group-hover:bg-gray-800",
-  },
+
   {
     name: "Email",
     icon: Mail,
@@ -92,9 +69,9 @@ export function SocialIconsDock({ className }: SocialIconsDockProps) {
   return (
     <div
       className={cn(
-        "fixed left-6 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 p-2 backdrop-blur-sm",
-        "border border-gray-200/20 shadow-[0_8px_30px_rgb(0,0,0,0.06)]",
-        "dark:bg-gray-900/20 dark:border-gray-700/20",
+        "fixed left-6 top-1/2 z-50 -translate-y-1/2  bg-zinc-800 rounded-full p-2 ",
+        "border border-gray-200/20 shadow-[0_12px_35px_rgb(0,0,0,0.06)]",
+        "",
         className
       )}
     >
@@ -124,12 +101,10 @@ export function SocialIconsDock({ className }: SocialIconsDockProps) {
               <div
                 className={cn(
                   "relative flex h-10 w-10 items-center justify-center rounded-full",
-                  "bg-white shadow-sm transition-all duration-300 ease-in-out",
-                  "hover:translate-x-2 hover:shadow-md",
-                  "dark:bg-gray-800"
+                  " shadow-sm transition-all duration-300 ease-in-out",
+                  "hover:translate-x-2 hover:shadow-md"
                 )}
               >
-                {/* Background circle that appears on hover */}
                 <div
                   className={cn(
                     "absolute inset-0 rounded-full opacity-0 transition-all duration-300",
@@ -141,17 +116,16 @@ export function SocialIconsDock({ className }: SocialIconsDockProps) {
                 {/* Icon */}
                 <social.icon
                   className={cn(
-                    "relative h-5 w-5 transition-all duration-300",
+                    "relative h-5 w-5 font-bold transition-all duration-300 ",
                     social.color,
                     social.hoverColor
                   )}
                 />
               </div>
 
-              {/* Label that appears on hover */}
               <span
                 className={cn(
-                  "absolute left-12 whitespace-nowrap rounded-md bg-white px-2 py-1 text-sm font-medium",
+                  "absolute left-15 whitespace-nowrap rounded-md bg-white px-3 py-1 text-sm font-medium",
                   "opacity-0 shadow-md transition-all duration-300",
                   "group-hover:opacity-100",
                   "dark:bg-gray-800 dark:text-gray-100"
