@@ -1,6 +1,23 @@
 @import "tailwindcss" important;
 
-/* @plugin "./tailwindFunc"; */
+
+@layer utilities {
+  .grainy-dark {
+    position: relative;
+    background: radial-gradient(circle at center, #1e1e1e, #111827);
+    overflow: hidden;
+  }
+
+  .grainy-dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+}
 
 
 :root {
@@ -12,12 +29,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: wheat;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  background-image: url("/images/bg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {

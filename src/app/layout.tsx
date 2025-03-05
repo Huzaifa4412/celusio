@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={`antialiased ${font.urbanist.className}`}>
+      <body
+        suppressHydrationWarning
+        className={`antialiased grainy-dark ${font.urbanist.className}`}
+      >
         {children}
       </body>
     </html>
