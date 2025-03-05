@@ -7,10 +7,12 @@ const Hero = () => {
   return (
     <div className="container">
       <h2
-        className={`text-5xl font-bold text-center text-zinc-800 ${font.poppins.className}`}
+        className={`text-5xl font-semibold text-center text-zinc-800 ${font.montserrat.className}`}
       >
         In{" "}
-        <span className={`text-amber-500 ${font.urbanist.className} underline`}>
+        <span
+          className={`text-amber-500 font-bold ${font.urbanist.className} underline`}
+        >
           Celusio
         </span>{" "}
         We Provides
@@ -22,7 +24,7 @@ const Hero = () => {
             options={{
               strings: [
                 "Web development",
-                "SEO",
+                "SEO Optimization",
                 "Digital Marketing",
                 "Ad's Management",
               ],
