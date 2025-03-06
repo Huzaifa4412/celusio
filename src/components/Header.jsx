@@ -6,7 +6,13 @@ const Header = () => {
   return (
     <nav className="container flex items-center justify-between gap-8 !py-0">
       <div id="logo">
-        <Image src={"/logo.svg"} alt="Logo" width={150} height={100}></Image>
+        <Image
+          className="invert"
+          src={"/logo.svg"}
+          alt="Logo"
+          width={150}
+          height={100}
+        ></Image>
       </div>
       <BlurText
         text="The growth that your brands needs."
