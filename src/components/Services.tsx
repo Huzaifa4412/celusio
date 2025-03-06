@@ -1,6 +1,7 @@
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { font } from "@/utils/font";
+import ShinyText from "./Heading";
 
 const Services = () => {
   const cardContent = [
@@ -9,11 +10,31 @@ const Services = () => {
       description: "SEO Management",
       icon: "/images/3d_pin_effect/seo.jpeg",
     },
+    {
+      title: "WEB DEVELOPMENT",
+      description: "Web Development",
+      icon: "/images/3d_pin_effect/web.jpeg",
+    },
+    {
+      title: "SOCIAL MEDIA",
+      description: "Social Media Management",
+      icon: "/images/3d_pin_effect/socialMedia.jpeg",
+    },
+    {
+      title: "MARKETING",
+      description: "Marketing Management",
+      icon: "/images/3d_pin_effect/marketing.jpeg",
+    },
   ];
   return (
     <div className="container">
-      Our Services.
-      <div className="h-[40rem] w-full flex items-center justify-center ">
+      <ShinyText
+        text="Our Services"
+        disabled={false}
+        speed={3}
+        className="custom-class mb-10"
+      />
+      <div className="h-[50rem] w-full flex items-center justify-center flex-wrap">
         {cardContent.map((item, id) => {
           return (
             <PinContainer title={"/" + item.title} key={id} href="/">
