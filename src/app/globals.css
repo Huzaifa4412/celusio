@@ -5,7 +5,6 @@
   .grainy-dark {
     position: relative;
     background: radial-gradient(circle at center, #1e1e1e, #111827);
-    overflow: hidden;
   }
 
   .grainy-dark::before {

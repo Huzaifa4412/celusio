@@ -13,39 +13,29 @@ export function FloatingDockDemo() {
   const links = [
     {
       title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconHome className="h-full w-full text-neutral-300" />,
       href: "#",
     },
 
     {
       title: "About",
-      icon: (
-        <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconUser className="h-full w-full text-neutral-300" />,
       href: "#",
     },
     {
       title: "Services",
-      icon: (
-        <IconBrandMyOppo className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandMyOppo className="h-full w-full text-neutral-300" />,
       href: "#",
     },
 
     {
       title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandX className="h-full w-full text-neutral-300" />,
       href: "#",
     },
     {
       title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandGithub className="h-full w-full text-neutral-300" />,
       href: "#",
     },
   ];

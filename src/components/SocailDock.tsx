@@ -3,7 +3,9 @@
 import type React from "react";
 
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
+// import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { IoMailOpenSharp } from "react-icons/io5";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
@@ -20,23 +22,15 @@ type SocialIcon = {
 const socialIcons: SocialIcon[] = [
   {
     name: "Facebook",
-    icon: Facebook,
+    icon: FaFacebookF,
     href: "https://www.facebook.com/people/Celusio/61573787310725/",
     color: "text-blue-500",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-blue-500",
   },
   {
-    name: "Twitter",
-    icon: Twitter,
-    href: "https://twitter.com",
-    color: "text-sky-400",
-    hoverColor: "group-hover:text-white",
-    bgColor: "group-hover:bg-sky-400",
-  },
-  {
     name: "Instagram",
-    icon: Instagram,
+    icon: FaInstagram,
     href: "https://www.instagram.com/celusio.pk/",
     color: "text-pink-500",
     hoverColor: "group-hover:text-white",
@@ -44,7 +38,7 @@ const socialIcons: SocialIcon[] = [
   },
   {
     name: "LinkedIn",
-    icon: Linkedin,
+    icon: FaLinkedin,
     href: "https://www.linkedin.com/in/celusio-solutions-aa69a5353/",
     color: "text-blue-600",
     hoverColor: "group-hover:text-white",
@@ -53,8 +47,8 @@ const socialIcons: SocialIcon[] = [
 
   {
     name: "Email",
-    icon: Mail,
-    href: "mailto:huzaifamukhtar436@gmail.com",
+    icon: IoMailOpenSharp,
+    href: "mailto:celusiosolutions@gmail.com",
     color: "text-emerald-500",
     hoverColor: "group-hover:text-white",
     bgColor: "group-hover:bg-emerald-500",
