@@ -64,7 +64,7 @@ export function SocialIconsDock({ className }: SocialIconsDockProps) {
   const { width } = useWindowSize();
   return (
     <>
-      {width > 760 && (
+      {width && width > 760 && (
         <div
           className={cn(
             "fixed left-6 top-1/2 z-50 w-max -translate-y-1/2  bg-zinc-800 rounded-full p-2 ",
