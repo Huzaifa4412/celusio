@@ -4,6 +4,8 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { Carousel } from "./ui/carousel";
+import CountUp from "./ui/counter";
+import { Separator } from "./ui/separator";
 
 const Hero = () => {
   const slideData = [
@@ -60,10 +62,10 @@ const Hero = () => {
         </span>
       </h2>
       <motion.p
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, x: -80 }}
         animate={{
           opacity: 1,
-          x: -80,
+          x: 0,
           transition: { duration: 1, easings: ["easeIn", "easeOut"] },
         }}
         className="text-lg w-1/2 text-white mx-auto mt-10 font-medium text-center"
@@ -74,6 +76,57 @@ const Hero = () => {
         campaigns, we turn ideas into results. 📊✨ Let&apos;s build something
         extraordinary together! 🔥
       </motion.p>
+
+      <div className="flex items-center justify-center mt-10">
+        <div className="flex flex-col">
+          <h3 className=" text-amber-500 text-xl font-semibold ">
+            Our Happy Clients
+          </h3>
+          <div>
+            <CountUp
+              from={0}
+              to={30}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-4xl font-bold"
+            />
+            <span className="text-2xl font-semibold ml-1">+</span>
+          </div>
+        </div>
+        <Separator orientation="vertical" className="mx-4" />
+        <div className="flex flex-col">
+          <h3 className=" text-amber-500 text-xl font-semibold ">
+            Completed Projects
+          </h3>
+          <div>
+            <CountUp
+              from={0}
+              to={50}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-4xl font-bold"
+            />
+            <span className="text-2xl font-semibold ml-1">+</span>
+          </div>
+        </div>
+        <Separator orientation="vertical" className="mx-4" />
+        <div className="flex flex-col">
+          <h3 className=" text-amber-500 text-xl font-semibold ">Services</h3>
+          <div>
+            <CountUp
+              from={0}
+              to={10}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-4xl font-bold"
+            />
+            <span className="text-2xl font-semibold ml-1">+</span>
+          </div>
+        </div>
+      </div>
       <div className="relative overflow-hidden w-full py-20">
         <Carousel slides={slideData} />
       </div>
