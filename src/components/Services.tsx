@@ -7,7 +7,7 @@ const Services = () => {
   const cardContent = [
     {
       title: "SEO",
-      description: "SEO Management",
+      description: "SEO OPTIMIZATION",
       icon: "/images/3d_pin_effect/seo.jpeg",
     },
     {
@@ -21,13 +21,13 @@ const Services = () => {
       icon: "/images/3d_pin_effect/socialMedia.jpeg",
     },
     {
-      title: "MARKETING",
-      description: "Marketing Management",
+      title: "DIGITAL MARKETING",
+      description: "Digital Marketing and Ad's Services",
       icon: "/images/3d_pin_effect/marketing.jpeg",
     },
   ];
   return (
-    <div className="container">
+    <div className="container mb-5">
       <ShinyText
         text="Our Services"
         disabled={false}

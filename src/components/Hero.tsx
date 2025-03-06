@@ -34,18 +34,18 @@ const Hero = () => {
   return (
     <div className="container">
       <h2
-        className={`text-5xl font-semibold text-center text-zinc-200 ${font.montserrat.className}`}
+        className={`md:text-5xl text-3xl font-semibold text-center text-zinc-200 ${font.montserrat.className}`}
       >
-        In{" "}
+        {/* In{" "} */}
         <span
           className={`text-amber-500 font-extrabold ${font.joining.className}`}
         >
           Celusio
         </span>{" "}
-        We Provides
+        Provides
         <br />
         <span
-          className={`${font.joining.className} mt-5 inline-block text-amber-300`}
+          className={`${font.joining.className} md:text-4xl text-2xl mt-5 inline-block text-amber-300`}
         >
           <Typewriter
             options={{
@@ -68,7 +68,7 @@ const Hero = () => {
           x: 0,
           transition: { duration: 1, easings: ["easeIn", "easeOut"] },
         }}
-        className="text-lg w-1/2 text-white mx-auto mt-10 font-medium text-center"
+        className="text-lg lg:w-1/2 md:w-[70%] w-full text-white mx-auto mt-10 font-medium text-center"
       >
         Welcome to Celusio—where innovation meets impact. 🚀 We craft
         cutting-edge software solutions and powerful marketing strategies to
@@ -77,8 +77,8 @@ const Hero = () => {
         extraordinary together! 🔥
       </motion.p>
 
-      <div className="flex items-center justify-center mt-10">
-        <div className="flex flex-col">
+      <div className="flex items-center justify-center mt-10 flex-wrap">
+        <div className="flex flex-col items-center">
           <h3 className=" text-amber-500 text-xl font-semibold ">
             Our Happy Clients
           </h3>
@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
         </div>
         <Separator orientation="vertical" className="mx-4" />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <h3 className=" text-amber-500 text-xl font-semibold ">
             Completed Projects
           </h3>
@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
         </div>
         <Separator orientation="vertical" className="mx-4" />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <h3 className=" text-amber-500 text-xl font-semibold ">Services</h3>
           <div>
             <CountUp
