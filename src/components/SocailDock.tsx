@@ -63,13 +63,13 @@ export function SocialIconsDock({ className }: SocialIconsDockProps) {
   return (
     <div
       className={cn(
-        "fixed left-6 top-1/2 z-50 -translate-y-1/2  bg-zinc-800 rounded-full p-2 ",
+        "fixed left-6 top-1/2 z-50 w-max -translate-y-1/2  bg-zinc-800 rounded-full p-2 ",
         "border border-gray-200/20 shadow-[0_12px_35px_rgb(0,0,0,0.06)]",
         "",
         className
       )}
     >
-      <div className="flex flex-col items-center gap-5 py-3">
+      <div className="flex flex-col w-max items-center gap-5 py-3">
         {socialIcons.map((social, index) => (
           <motion.div
             key={social.name}
