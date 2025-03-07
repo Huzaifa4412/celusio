@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "./Preloader.module.css";
-
+import Image from "next/image";
+import { font } from "@/utils/font";
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    });
   });
   return (
     <>
@@ -17,14 +18,21 @@ const Preloader = () => {
             <div id="ctn-preloader" className={`${styles.ctn_preloader}`}>
               <div className={`${styles.animation_preloader}`}>
                 {/* <!-- Spinner --> */}
-                <div className={styles.spinner}></div>
+                {/* <div className={styles.spinner}></div> */}
+                <Image
+                  src="/logo.svg"
+                  className="flex items-center invert justify-center"
+                  width={200}
+                  height={200}
+                  alt="Logo"
+                ></Image>
                 <div className={`${styles.txt_loading}`}>
-                  {"Celusio Solutions".split("").map((item,id) => {
+                  {"Celusio Solutions".split("").map((item, id) => {
                     return (
                       <span
                         data-text-preloader={item}
                         key={id}
-                        className={` ${styles.letters_loading}`}
+                        className={` ${styles.letters_loading} text-amber-400 ${font.urbanist.className}`}
                       >
                         {item}
                       </span>

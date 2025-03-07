@@ -2,11 +2,11 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandX,
   IconHome,
   IconUser,
   IconBrandMyOppo,
+  IconBrandWhatsapp,
+  IconMail,
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
@@ -29,13 +29,13 @@ export function FloatingDockDemo() {
     },
 
     {
-      title: "Twitter",
-      icon: <IconBrandX className="h-full w-full text-neutral-300" />,
+      title: "Whatsapp",
+      icon: <IconBrandWhatsapp className="h-full w-full text-neutral-300" />,
       href: "#",
     },
     {
-      title: "GitHub",
-      icon: <IconBrandGithub className="h-full w-full text-neutral-300" />,
+      title: "Mail",
+      icon: <IconMail className="h-full w-full text-neutral-300" />,
       href: "#",
     },
   ];

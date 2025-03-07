@@ -60,7 +60,7 @@
 .ctn_preloader .animation_preloader .txt_loading .letters_loading:before {
     -webkit-animation: letters_loading 4s infinite;
     animation: letters_loading 4s infinite;
-    color: #000000;
+    color: #fff;
     content: attr(data-text-preloader);
     left: 0;
     opacity: 0;
@@ -153,7 +153,12 @@
 
 /* Loader section Settings */
 .ctn_preloader .loader_section {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-image: url("/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
     position: fixed;
     top: 0;
