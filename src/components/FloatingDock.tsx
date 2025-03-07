@@ -36,7 +36,7 @@ export function FloatingDockDemo() {
     {
       title: "Mail",
       icon: <IconMail className="h-full w-full text-neutral-300" />,
-      href: "#",
+      href: "mailto:celusiosolutions.gmail.com",
     },
   ];
   return (
