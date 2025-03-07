@@ -8,7 +8,7 @@ const Preloader = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    });
+    }, 300);
   });
   return (
     <>
