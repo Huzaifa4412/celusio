@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/utils/BlurText.tsx",
-    "src/components/Header.jsx"
+    "src/components/Header.jsx",
+    "src/components/Preloader/Preloader.jsx"
   ],
   "exclude": ["node_modules"]
 }
