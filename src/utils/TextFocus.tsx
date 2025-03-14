@@ -24,7 +24,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
   manualMode = false,
   blurAmount = 5,
   borderColor = "green",
-  glowColor = "rgba(0, 255, 0, 0.6)",
+  glowColor = "orange",
   animationDuration = 0.5,
   pauseBetweenAnimations = 1,
 }) => {
@@ -88,7 +88,10 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
         return (
           <span
             key={index}
-            ref={(el) => (wordRefs.current[index] = el)}
+            ref={(el) => {
+              wordRefs.current[index] = el;
+              return void 0;
+            }}
             className="relative text-[3rem] font-black cursor-pointer"
             style={
               {
