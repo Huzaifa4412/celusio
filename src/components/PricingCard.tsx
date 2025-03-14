@@ -2,6 +2,7 @@ import React from "react";
 
 const PricingCard = ({
   type,
+  name,
   price,
   duration,
   description,
@@ -9,7 +10,8 @@ const PricingCard = ({
   featuresDescription,
 }: {
   type: string;
-  price: number;
+  name: string;
+  price: string;
   duration: string;
   description: string;
   features: string[];
@@ -17,10 +19,11 @@ const PricingCard = ({
 }) => {
   return (
     <div className="group relative w-80">
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900 p-[1px] shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/25">
+      {/* bg-gradient-to-b from-slate-950 to-slate-900 */}
+      <div className="relative overflow-hidden rounded-2xl bg-[#50D8D7]  p-[1px] shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/25">
         <div className="absolute inset-0 bg-gradient-to-b from-cyan-500 to-blue-500 opacity-20"></div>
 
-        <div className="relative rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900 p-6">
+        <div className="relative rounded-2xl bg-[#000] p-6">
           <div className="absolute -left-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70"></div>
           <div className="absolute -bottom-16 -right-16 h-32 w-32 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/0 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-70"></div>
 
@@ -34,11 +37,16 @@ const PricingCard = ({
           </div>
 
           <div className="relative">
-            <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
-              {type}
-            </h3>
+            <div className="flex justify-between items-center">
+              <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
+                {type}
+              </h3>
+              <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
+                {name}
+              </h3>
+            </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-3xl font-bold text-white">${price}</span>
+              <span className="text-3xl font-bold text-white">Rs {price}</span>
               <span className="text-sm text-slate-400">/{duration}</span>
             </div>
             <p className="mt-2 text-sm text-slate-400">{description}</p>

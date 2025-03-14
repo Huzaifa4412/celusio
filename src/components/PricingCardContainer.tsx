@@ -1,24 +1,40 @@
 import React from "react";
 import PricingCard from "./PricingCard";
+import TrueFocus from "@/utils/TextFocus";
 
 const PricingCardContainer = () => {
   return (
     <div className="container mt-10">
+      <TrueFocus
+        sentence="Pricing Cards"
+        manualMode={false}
+        blurAmount={5}
+        borderColor="red"
+        animationDuration={2}
+        pauseBetweenAnimations={1}
+      />
       <PricingCard
         type="basic"
-        description="The Basic need for you brand"
+        name="WEB ESSENTIALS PACKAGE"
+        description="Perfect for: Startups and businesses looking for a modern, professional, and functional website."
         duration="Life time"
         features={[
-          "Unlimited pages",
-          "Unlimited components",
-          "Unlimited users",
+          "Custom Website Design",
+          "Up to 4 Pages",
+          "SEO Optimization",
+          "Contact Form & Links Integration",
+          "Basic Web Animations",
+          "1-Month Free Technical Support",
         ]}
         featuresDescription={[
-          "Create and manage unlimited pages without restriction.",
-          "Access to a comprehensive library of components for any project.",
-          "Invite and collaborate with unlimited users on your projects.",
+          "Sleek, responsive, and mobile-friendly design tailored to your brand.",
+          "Home, About, Services, Blog, Contact, and more.",
+          "On-page SEO to boost your search engine visibility.",
+          "Easy communication for your customers.",
+          "Subtle animations to enhance user engagement.",
+          "Ensure your website runs smoothly after launch.",
         ]}
-        price={50000}
+        price={"50,000"}
         key={1}
       />
     </div>
