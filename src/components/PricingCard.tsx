@@ -2,7 +2,6 @@ import React from "react";
 
 const PricingCard = ({
   type,
-  name,
   price,
   duration,
   description,
@@ -10,7 +9,6 @@ const PricingCard = ({
   featuresDescription,
 }: {
   type: string;
-  name: string;
   price: string;
   duration: string;
   description: string;
@@ -37,14 +35,10 @@ const PricingCard = ({
           </div>
 
           <div className="relative">
-            <div className="flex justify-between items-center">
-              <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
-                {type}
-              </h3>
-              <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
-                {name}
-              </h3>
-            </div>
+            <h3 className="text-sm font-medium uppercase tracking-wider text-cyan-500">
+              {type}
+            </h3>
+
             <div className="mt-2 flex items-baseline gap-2">
               <span className="text-3xl font-bold text-white">Rs {price}</span>
               <span className="text-sm text-slate-400">/{duration}</span>
