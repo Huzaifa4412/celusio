@@ -9,7 +9,7 @@ const PricingCardContainer = () => {
         sentence="Pricing Cards"
         manualMode={false}
         blurAmount={5}
-        borderColor="red"
+        borderColor="#50D8D7"
         animationDuration={2}
         pauseBetweenAnimations={1}
       />
