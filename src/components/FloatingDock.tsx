@@ -31,12 +31,12 @@ export function FloatingDockDemo() {
     {
       title: "Whatsapp",
       icon: <IconBrandWhatsapp className="h-full w-full text-neutral-300" />,
-      href: "#",
+      href: "https://wa.link/cd26iu",
     },
     {
       title: "Mail",
       icon: <IconMail className="h-full w-full text-neutral-300" />,
-      href: "mailto:celusiosolutions.gmail.com",
+      href: "mailto:mukhtarhuzaifa436@gmail.com",
     },
   ];
   return (
