@@ -4,7 +4,7 @@ import TrueFocus from "@/utils/TextFocus";
 
 const PricingCardContainer = () => {
   return (
-    <div className="container mt-10">
+    <div className="container lg:mt-10 mt-150 ">
       <TrueFocus
         sentence="Pricing Cards"
         manualMode={false}
@@ -13,7 +13,7 @@ const PricingCardContainer = () => {
         animationDuration={2}
         pauseBetweenAnimations={1}
       />
-      <div className="flex items-center gap-5">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-8">
         <PricingCard
           type="WEB ESSENTIALS PACKAGE"
           description="Perfect for: Startups and businesses looking for a modern, professional, and functional website."
@@ -38,8 +38,7 @@ const PricingCardContainer = () => {
           key={1}
         />
         <PricingCard
-          type="WEB PRO PACKAGE
-"
+          type="WEB PRO PACKAGE"
           description="Perfect for: Growing businesses needing a dynamic, feature-rich website with backend functionality."
           duration="Life time"
           features={[

@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import React from "react";
 import PricingCardContainer from "../components/PricingCardContainer";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <FloatingDockDemo />
       <Services />
       <PricingCardContainer />
+      <Footer />
     </>
   );
 };
