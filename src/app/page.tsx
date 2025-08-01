@@ -8,17 +8,22 @@ import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <>
-      <div className="min-h-screen w-full relative">
-        {/* Dark Horizon Glow */}
+   
+      <div className="min-h-screen w-full bg-[#020617] relative">
+        {/* Magenta Orb Grid Background */}
         <div
           className="absolute inset-0 z-0"
           style={{
-            background:
-              "radial-gradient(125% 125% at 50% 10%, #000000 40%, #0d1a36 100%)",
+            background: "#020617",
+            backgroundImage: `
+        linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),
+        radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)
+      `,
+            backgroundSize: "40px 40px, 40px 40px, 100% 100%",
           }}
         />
-
+        {/* Your Content/Components */}
         <Header />
         <Hero />
         <FloatingDockDemo />
@@ -26,7 +31,7 @@ const page = () => {
         <PricingCardContainer />
         <Footer />
       </div>
-    </>
+    
   );
 };
 
