@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <>
       <Preloader />
-      <div className="container">
+      <div className="container relative">
         <h2
           className={`md:text-5xl text-3xl font-semibold text-center text-zinc-200 ${font.montserrat.className}`}
         >
@@ -73,11 +73,11 @@ const Hero = () => {
           }}
           className="text-lg lg:w-1/2 md:w-[70%] w-full text-white mx-auto mt-10 font-medium text-center"
         >
-          Welcome to Celusio—where innovation meets impact. 🚀 We craft
+          Welcome to Celusio—where innovation meets impact. We craft
           cutting-edge software solutions and powerful marketing strategies to
-          elevate your brand. 💡 From sleek web development to data-driven
-          campaigns, we turn ideas into results. 📊✨ Let&apos;s build something
-          extraordinary together! 🔥
+          elevate your brand. From sleek web development to data-driven
+          campaigns, we turn ideas into results. Let&apos;s build something
+          extraordinary together!
         </motion.p>
 
         <div className="flex items-center justify-center mt-10 flex-wrap">
